@@ -1,5 +1,5 @@
 ---
-name: Performance issue
+name: Performance Issue
 about: Report a performance problem or regression
 title: ''
 labels: 'tenet-performance'
@@ -7,44 +7,55 @@ assignees: ''
 
 ---
 
-<!--This is just a template - feel free to delete any and all of it and replace as appropriate.-->
+<!-- This is just a template - feel free to delete any and all of it and replace as appropriate. -->
 
 ### Description
 
 <!--
-* Please share a clear and concise description of the performance problem.
-* Include minimal steps to reproduce the problem if possible. E.g.: the smallest possible code snippet; or a small repo to clone, with steps to run it.
-  -->
+* A clear and concise description of the performance issue. What specific operation is slow or unresponsive? When did you first notice the problem?
+* Include minimal steps to reproduce the problem if possible. This might be the smallest possible code snippet; a small repo to clone, with steps to run it; or a script.
+* Indicate if the performance issue is consistent or sporadic.
+-->
 
 ### Configuration
 
 <!--
-(If you are posting Benchmark.NET results, this info will be included.)
-* Which version of .NET is the code running on?
-* What OS version, and what distro if applicable?
-* What is the architecture (x64, x86, ARM, ARM64)?
-* If relevant, what are the specs of the machine?
-  -->
+* The version of .NET (including any specific service packs or patches) the code is running on.
+* OS version and distribution (if applicable).
+* System architecture (x64, x86, ARM, ARM64).
+* Details about the machine's hardware, such as CPU, RAM, and disk type (SSD/HDD).
+* Any specific library or framework versions the application is using.
+-->
 
 ### Regression?
 
 <!--
-* Is this a regression from a previous build or release of .NET Core, or from .NET Framework? If you can try a previous release or build to find out, that can help us narrow down the problem. If you don't know, that's OK.
-  -->
+* Was this always a problem, or is it a regression from a previous state? If so, what has changed (e.g., software upgrade, hardware modification)?
+* If applicable, information about the version where the performance was adequate.
+* Indicate whether you can test on previous .NET versions or different environments to help identify the regression window.
+-->
 
 ### Data
 
 <!--
-* Please include any benchmark results, images of graphs, timings or measurements, or callstacks that are relevant.
-* If possible please include text as text rather than images (so it shows up in searches).
-* If applicable please include before and after measurements.
-* There is helpful information about measuring code in this repo [here](https://github.com/dotnet/performance/blob/master/docs/benchmarking-workflow-dotnet-runtime.md).
-  -->
+* Include any relevant benchmark results or performance profiling data.
+* If applicable, include images of graphs, timings, or measurements (preferably as text rather than screenshots for searchability).
+* Before and after measurements if a regression is identified.
+* Links to any relevant performance analysis tools or datasets.
+-->
 
 ### Analysis
 
 <!--
-* If you have an idea where the problem might lie, let us know that here.
-* Please include any pointers to code, relevant changes, or related issues you know of.
-* If you don't know, you can delete this section.
-  -->
+* Your preliminary analysis, if available. Where do you suspect the problem lies (e.g., network latency, inefficient database query, high CPU usage)?
+* Any specific areas of the codebase or dependencies that you think might be involved.
+* Related issues, pull requests, or discussions.
+* If you have no insights yet, consider any monitoring tools or techniques that could be used to diagnose the issue.
+-->
+
+### Additional Context
+
+<!--
+* Any other context or information that you think might be relevant to the issue.
+* If you have already tried certain solutions or workarounds, please include them here.
+-->
