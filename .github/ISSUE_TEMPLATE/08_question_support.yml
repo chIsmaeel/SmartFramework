@@ -1,0 +1,56 @@
+name: Question or Support
+description: Ask a question or request support
+title: '[QUESTION/SUPPORT]: '
+labels: ['question', 'support']
+assignees: 
+  - 'chismaeel'
+
+body:
+  - type: markdown
+    attributes:
+      value: "🤔 Got a question or need support with the project? We're here to help!"
+
+  - type: textarea
+    id: question-summary
+    attributes:
+      label: Question or Support Request Summary
+      description: Briefly summarize your question or the support you need.
+      placeholder: "What's your question, or what kind of support do you need?"
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Provide additional context or details to help us understand your question or support needs.
+      placeholder: "Provide any additional context that might help us answer your question or provide support."
+    validations:
+      required: true
+
+  - type: textarea
+    id: attempts
+    attributes:
+      label: What Have You Tried So Far?
+      description: Have you attempted any solutions or troubleshooting steps already?
+      placeholder: "Share any attempts you've made to solve the issue or find answers to your question."
+    validations:
+      required: false
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: If applicable, describe your environment or setup. For example, your operating system, version of the project, relevant dependencies, etc.
+      placeholder: "e.g., macOS Big Sur, project version 2.1.0, Node.js 14.17.0"
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Confirmation
+      description: Before submitting, please confirm the following:
+      options:
+        - label: I have searched existing issues and the documentation for answers to my question.
+          required: true
