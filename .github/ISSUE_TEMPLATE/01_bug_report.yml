@@ -6,7 +6,7 @@ body:
   - type: markdown
     attributes:
       value: "Thanks for taking the time to fill out this bug report."
-  
+
   - type: textarea
     id: what-happened
     attributes:
@@ -15,7 +15,7 @@ body:
       placeholder: "Tell us what you see!"
     validations:
       required: true
-  
+
   - type: textarea
     id: reproduce
     attributes:
@@ -61,14 +61,7 @@ body:
 
   - type: markdown
     attributes:
-      value: "Attach any screenshots or recordings demonstrating the problem."
-
-  - type: file
-    id: screenshots
-    attributes:
-      label: Screenshots/Recordings
-      description: "If applicable, add screenshots or screen recordings to help explain your problem."
-      multiple: true
+      value: "If applicable, attach any screenshots or recordings demonstrating the problem. You can add attachments by dragging and dropping them into the comment box after submitting this form."
 
   - type: checkboxes
     id: terms
