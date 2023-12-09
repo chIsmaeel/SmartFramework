@@ -1,0 +1,57 @@
+name: Feature Request
+description: Suggest an idea or enhancement for the project
+title: '[FEATURE]: '
+labels: ['enhancement']
+assignees: ''
+
+body:
+  - type: markdown
+    attributes:
+      value: "🚀 Thank you for taking the time to suggest a feature!"
+
+  - type: textarea
+    id: feature-summary
+    attributes:
+      label: Feature Summary
+      description: A clear and concise summary of the feature.
+      placeholder: "A brief description of what the feature request is about."
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem-solution
+    attributes:
+      label: Problem and Solution
+      description: What problem does this feature solve? What does your proposed solution look like?
+      placeholder: "Explain the problem you're facing and the proposed solution."
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+      description: Have you considered any alternative solutions or features?
+      placeholder: "Describe any alternative solutions or features you've considered."
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Any other context or screenshots about the feature request.
+      placeholder: "Add any other context or screenshots about the feature request here."
+
+  - type: markdown
+    attributes:
+      value: "Please provide as much detail as you can. This will help us to understand and prioritize the request more effectively."
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Agreement
+      description: Confirm before submission
+      options:
+        - label: I confirm that this feature request has not already been proposed in existing issues.
+          required: true
