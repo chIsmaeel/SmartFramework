@@ -6,6 +6,7 @@ body:
   - type: markdown
     attributes:
       value: "Thanks for taking the time to fill out this bug report."
+  
   - type: textarea
     id: what-happened
     attributes:
@@ -14,26 +15,68 @@ body:
       placeholder: "Tell us what you see!"
     validations:
       required: true
+  
   - type: textarea
     id: reproduce
     attributes:
-      label: Steps to reproduce
+      label: Steps to Reproduce
       description: Detail the steps taken to encounter the bug.
       placeholder: "1. Do this... 2. Then do this... 3. And then you see..."
     validations:
       required: true
+
   - type: textarea
     id: expected-behavior
     attributes:
-      label: Expected behavior
+      label: Expected Behavior
       description: Describe what you expected to happen.
     validations:
       required: true
+
+  - type: textarea
+    id: actual-behavior
+    attributes:
+      label: Actual Behavior
+      description: Describe what actually happened. Note any discrepancies from expected behavior.
+    validations:
+      required: true
+
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: "Please provide the environment in which the bug was observed (e.g., OS, browser, version)."
+      placeholder: "e.g., Windows 10, Chrome 92.0"
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Log Output / Error Message
+      description: "Include any relevant logs or error messages (ensure to remove sensitive information)."
+      placeholder: "Paste log output here"
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: "Attach any screenshots or recordings demonstrating the problem."
+
+  - type: file
+    id: screenshots
+    attributes:
+      label: Screenshots/Recordings
+      description: "If applicable, add screenshots or screen recordings to help explain your problem."
+      multiple: true
+
   - type: checkboxes
     id: terms
     attributes:
-      label: Terms
+      label: Confirmation
       description: Please confirm the following
       options:
-        - label: I have searched the existing issues
+        - label: I have searched the existing issues and this is a new report.
+          required: true
+        - label: I have provided all necessary information to reproduce the problem.
           required: true
