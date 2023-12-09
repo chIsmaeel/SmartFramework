@@ -3,7 +3,8 @@ name: Performance Issue
 about: Report a performance problem or regression
 title: ''
 labels: 'tenet-performance'
-assignees: ''
+assignees: 
+  - 'chismaeel'
 
 ---
 
