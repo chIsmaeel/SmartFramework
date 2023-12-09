@@ -2,7 +2,7 @@
 name: Performance Issue
 about: Report a performance problem or regression
 title: ''
-labels: 'tenet-performance'
+labels: 'performance'
 assignees: 'chismaeel'
 
 ---
