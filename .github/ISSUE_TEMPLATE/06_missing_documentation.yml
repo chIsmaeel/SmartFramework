@@ -1,0 +1,54 @@
+name: Missing Documentation
+description: Report missing documentation or suggest additions
+title: '[DOCS MISSING]: '
+labels: ['documentation']
+assignees: 
+  - 'chismaeel'
+
+body:
+  - type: markdown
+    attributes:
+      value: "📝 Thanks for helping us improve our documentation! Please provide as much detail as possible about the missing documentation."
+
+  - type: textarea
+    id: missing-docs-location
+    attributes:
+      label: Expected Documentation Location
+      description: Where do you expect to find this documentation? Include file names, URLs, or general areas in the project.
+      placeholder: "e.g., README.md, /docs/getting-started.md, project wiki, etc."
+    validations:
+      required: true
+
+  - type: textarea
+    id: feature-or-concept
+    attributes:
+      label: Feature or Concept
+      description: What feature or concept is missing documentation?
+      placeholder: "Describe the feature or concept that lacks sufficient documentation."
+    validations:
+      required: true
+
+  - type: textarea
+    id: why-important
+    attributes:
+      label: Why is this Important?
+      description: Explain why this documentation is important for users or contributors.
+      placeholder: "Why is this documentation important? How would it help you or others?"
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Provide any additional context that might help us understand the need for the documentation.
+      placeholder: "Any other information or context regarding the missing documentation."
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Agreement
+      description: Confirm before submission
+      options:
+        - label: I confirm that I have searched existing documentation and issues for this missing content.
+          required: true
