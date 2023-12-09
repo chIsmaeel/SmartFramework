@@ -2,7 +2,8 @@ name: Documentation Improvement
 description: Suggest improvements or report issues in the documentation
 title: '[DOCS]: '
 labels: ['documentation']
-assignees: ''
+assignees: 
+  - 'chismaeel'
 
 body:
   - type: markdown
