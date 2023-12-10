@@ -30,4 +30,4 @@ We take the security of our project seriously. If you have discovered a security
 
 Provide some general information about security considerations relevant to your project, like recommended configuration settings or features that users should enable/disable for better security.
 
-Thank you for helping keep [Your Project Name] and its users safe.
+Thank you for helping keep Smart Framework and its users safe.
