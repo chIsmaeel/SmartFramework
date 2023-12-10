@@ -3,6 +3,8 @@
 ## About The Project
 SmartFramework is an innovative framework designed to enhance developer productivity and automate repetitive tasks. Utilizing a modular architecture and metadata-driven approach, it streamlines code generation, enabling efficient and dynamic development processes.
 
+[![Build Pipeline](https://github.com/chIsmaeel/SmartFramework/actions/workflows/BuildPipeline.yml/badge.svg)](https://github.com/chIsmaeel/SmartFramework/actions/workflows/BuildPipeline.yml)
+
 ### Features
 - **Modular Architecture:** Facilitates a clean and organized codebase.
 - **Metadata Generator:** Analyzes modules to produce essential metadata.
