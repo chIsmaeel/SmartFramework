@@ -11,6 +11,16 @@ updates:
     schedule:
       interval: "weekly"
     open-pull-requests-limit: 5
+    commit-message:
+      prefix: "[dependency update]" # Prefix for the commit message and PR title
+    pull-request-branch-name:
+      separator: "-" # Customize the branch name for PRs
+    # Automatically set assignees for the pull requests
+    assignees:
+      - "chismaeel"
+    # Add labels to the pull request if needed
+    labels:
+      - "dependencies"
     # Additional settings like assignees, labels, etc.
 
   # Repeat for more .NET projects as needed
@@ -20,6 +30,13 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
+    commit-message:
+      prefix: "[dependency update]" # Prefix for the commit message and PR title
+    pull-request-branch-name:
+      separator: "-" # Customize the branch name for PRs
+    # Automatically set assignees for the pull requests
+    assignees:
+      - "chIsmaeel"
+    # Add labels to the pull request if needed
     labels:
       - "dependencies"
-      - "github-actions"
