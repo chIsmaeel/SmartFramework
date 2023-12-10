@@ -1,0 +1,25 @@
+# To get started with Dependabot version updates, you'll need to specify which
+# package ecosystems to update and where the package manifests are located.
+# Please see the documentation for all configuration options:
+# https://docs.github.com/github/administering-a-repository/configuration-options-for-dependency-updates
+
+version: 2
+updates:
+  # Configuration for the first .NET project
+  - package-ecosystem: "nuget"
+    directory: "/" # Path to the first project
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 5
+    # Additional settings like assignees, labels, etc.
+
+  # Repeat for more .NET projects as needed
+
+  # Configuration for GitHub Actions (optional)
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    labels:
+      - "dependencies"
+      - "github-actions"
